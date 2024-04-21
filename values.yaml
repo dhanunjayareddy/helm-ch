@@ -12,8 +12,12 @@ service:
 
 
 env:
-  DATABASE_URL: "postgresql://postgres:supersecret@cnpg-webhook-service.default.svc.cluster.local/postgres"
-  URL_HOST: localhost
+  - name: DATABASE_URL
+    value: postgresql://postgres:supersecret@cluster-example-rw.default.svc.cluster.local:5432/postgres
+  - name: URL_HOST
+    value: localhost
+  - name: SECRET_KEY_BASE
+    value: KhxyAbS5GX8LzOw+eNAoe4M3PJ2b9JLMf4P5amJ/drPauX0GE+rU/T26OPjmtV8HL5zZ178xBU7OczPyDRVgVg==
 
 resources:
   limits:
