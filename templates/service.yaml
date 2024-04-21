@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "phoenix-app.fullname" . }}
+  labels:
+    {{- include "phoenix-app.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: 4000
+  selector:
+    {{- include "phoenix-app.selectorLabels" . | nindent 4 }}

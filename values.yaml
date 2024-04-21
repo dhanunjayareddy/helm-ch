@@ -1,0 +1,32 @@
+replicaCount: 1
+
+image:
+  repository: dhanureddy/phoenix-example
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+service:
+  type: NodePort
+  port: 8000
+  nodePort: 3800
+
+
+env:
+  DATABASE_URL: "postgresql://postgres:supersecret@cnpg-webhook-service.default.svc.cluster.local/postgres"
+  URL_HOST: localhost
+
+resources:
+  limits:
+    cpu: "100m"
+    memory: "128Mi"
+  requests:
+    cpu: "100m"
+    memory: "128Mi"
+
+# serviceAccount:
+#   # Specifies whether a service account should be created
+#   create: true
+#   # The name of the service account to use.
+#   # If not set and create is true, a name is generated using the fullname template
+#   name: ""
+
