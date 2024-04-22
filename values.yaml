@@ -15,6 +15,7 @@ env:
     DATABASE_URL: "postgresql://postgres:supersecret@cluster-example-rw.default.svc.cluster.local:5432/postgres"
     URL_HOST: localhost
     SECRET_KEY_BASE: KhxyAbS5GX8LzOw+eNAoe4M3PJ2b9JLMf4P5amJ/drPauX0GE+rU/T26OPjmtV8HL5zZ178xBU7OczPyDRVgVg==
+    user1: user
 
 resources:
   limits:
