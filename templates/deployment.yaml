@@ -21,7 +21,9 @@ spec:
           ports:
             - containerPort: 4000
           env:
-            - name: DATABASE_URL
-              value: {{ .Values.env.DATABASE_URL }}
+            {{- range $key, $value := .Values.env }}
+            - name: {{ $key | quote }}
+              value: {{ $value | quote }}
+            {{- end }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
