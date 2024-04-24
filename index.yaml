@@ -3,7 +3,17 @@ entries:
   phoenix-app:
   - apiVersion: v2
     appVersion: 1.16.1
-    created: "2024-04-22T09:55:57.247655+05:30"
+    created: "2024-04-24T16:55:49.933694+05:30"
+    description: A Helm chart for the Phoenix application
+    digest: d01ee1c62b5f3a236a3bb626c1d1c5fdec8927a248326987c3d94dcad45eb64a
+    name: phoenix-app
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/dhanunjayareddy/helm-ch/main/phoenix-app-1.1.2.tgz
+    version: 1.1.2
+  - apiVersion: v2
+    appVersion: 1.16.1
+    created: "2024-04-24T16:55:49.931102+05:30"
     description: A Helm chart for the Phoenix application
     digest: 12b200269dd9a04e44e52e0e6a2fc1d89ee449c10dc1752fb9b9cefe26210846
     name: phoenix-app
@@ -13,7 +23,7 @@ entries:
     version: 1.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-04-22T09:55:57.245862+05:30"
+    created: "2024-04-24T16:55:49.929814+05:30"
     description: A Helm chart for the Phoenix application
     digest: 9c42679eae7b03609102b5d4e7090a15dd46e75e6e18912278e26f470d092c50
     name: phoenix-app
@@ -21,4 +31,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/dhanunjayareddy/helm-ch/main/phoenix-app-0.1.0.tgz
     version: 0.1.0
-generated: "2024-04-22T09:55:57.243788+05:30"
+generated: "2024-04-24T16:55:49.928426+05:30"

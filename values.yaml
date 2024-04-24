@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: dhanureddy/phoenix-example
   pullPolicy: IfNotPresent
-  tag: "latest"
+  tag: "latest1"
 
 service:
   type: NodePort
